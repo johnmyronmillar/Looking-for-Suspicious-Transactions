@@ -1,0 +1,23 @@
+engine = create_engine("postgresql://postgres:Tx003677@localhost:5432/TransDB")
+
+query = "SELECT t.id, t.date, t.amount, cc.id_card_holder FROM transaction as t INNER JOIN credit_card as cc ON t.card = cc.card WHERE cc.id_card_holder = 2 or cc.id_card_holder = 18;"
+
+transaction_df = pd.read_sql(query, engine)
+
+transaction_df.head()
+
+transaction2 = transaction_df.loc[transaction_df['id_card_holder'] == 2] 
+
+transaction2.hvplot.line(x='date', y='amount')
+
+transaction18 = transaction_df.loc[transaction_df['id_card_holder'] == 18] 
+
+transaction18.hvplot.line(x='date', y='amount')
+
+transaction2.hvplot.line(x='date', y='amount') * transaction18.hvplot.line(x='date', y='amount')
+
+query = "SELECT t.id, t.date, t.amount, cc.id_card_holder FROM transaction as t INNER JOIN credit_card as cc ON t.card = cc.card WHERE cc.id_card_holder = 25;"
+
+transaction25 = pd.read_sql(query, engine)
+
+transaction25
