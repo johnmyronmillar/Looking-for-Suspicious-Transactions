@@ -13,3 +13,7 @@ WHERE id = 640;
 SELECT t.id, t.date, t.amount, t.id_merchant, m.name FROM transaction as t 
 INNER JOIN merchant as m ON t.id_merchant = m.id 
 WHERE t.id = 640;
+
+SELECT t.id, t.date, t.amount, t.id_merchant, m.name FROM transaction as t 
+INNER JOIN merchant as m ON t.id_merchant = m.id 
+WHERE t.amount = 19.87 or t.amount = 19.55;
