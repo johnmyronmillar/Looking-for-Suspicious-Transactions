@@ -66,8 +66,8 @@ We can utilize python to create a systematic review process. The following docum
 
 First we can sort a customer's transaction by dollar amount, then review the largest tranactions. For cardholder 25 there are a dozen transaction that are over $200. We can then use the transaction id to reference the merchant table.
 
-    TransID DateTimeStamp       Amount      MerchantID  MerchantName
-*	  1415	  2018-01-30 18:31:00	$1177.00    64          Cline, Myers and Strong
+        TransID     DateTimeStamp       Amount      MerchantID          MerchantName
+*	  1415	  2018-01-30 18:31:00	$1177.00          64            Cline, Myers and Strong
 *	  2840	  2018-03-06 07:18:09	$1334.00	  87	        Griffin-Woodard
 *	  1341	  2018-04-08 06:03:50	$1063.00	  16	        Bryant, Thomas and Collins
 *	  329	    2018-04-09 18:28:25	$ 269.00	  36	        Hamilton-Mcfarland
@@ -84,17 +84,17 @@ The opposite of reviewing the largest transaction is review transaction below a 
 
 Cardholder 25 has one transaction below $2 between the hours of 7am and 9am. Since there is only one over the year, this is very suspicious.
 
-    TransID DateTimeStamp       Amount  MerchantID  MerchantName
-*	  640	    2018-10-08 08:18:57	$1.74	  95        	Baxter-Smith
+        TransID     DateTimeStamp           Amount      MerchantID      MerchantName
+*	  640	    2018-10-08 08:18:57	    $1.74           95        	Baxter-Smith
 
 Cardholder 19 has multiple transaction below $2 between the hours of 7am and 9am. Since there are multiple transaction below $2 during our timeframe, this maybe the customer's normal behavior, but we'd still want to inspect the merchants to see if small dollar transactions are expected for their type of business.
 
-    TransID DateTimeStamp       Amount  MerchantID  MerchantName
-*	  631   	2018-12-20 08:00:01	$0.78 	66        	Robles Inc
-*	  2224   	2018-06-07 07:07:22	$1.62 	114       	Greene-Wood
-*	  564   	2018-09-21 07:53:08	$0.61 	117       	Mitchell Group
-*	  546   	2018-09-24 08:19:07	$1.89 	132       	Pugh-Williams
-*	  3462   	2018-04-29 08:03:32	$1.72 	132        	Pugh-Williams
+        TransID     DateTimeStamp           Amount      MerchantID      MerchantName
+*	  631       2018-12-20 08:00:01	    $0.78 	    66        	Robles Inc
+*	  2224      2018-06-07 07:07:22	    $1.62 	    114       	Greene-Wood
+*	  564       2018-09-21 07:53:08	    $0.61 	    117       	Mitchell Group
+*	  546       2018-09-24 08:19:07	    $1.89 	    132       	Pugh-Williams
+*	  3462      2018-04-29 08:03:32	    $1.72 	    132        	Pugh-Williams
 
 ### Transactions outside the standard diviation
 
