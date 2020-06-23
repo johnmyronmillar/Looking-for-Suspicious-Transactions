@@ -82,5 +82,5 @@ Finally we can use the quartile functionality to find the transaciton in the bot
 
 Transactional Database reference tables:
 
-![Transactionsdb](Images/QuickDBD-export(1).png)
+![Transactionsdb](Images/QuickDBD-export (1).png)
 
