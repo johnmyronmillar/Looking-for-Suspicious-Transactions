@@ -1,12 +1,14 @@
 # Looking-for-Suspicious-Transactions
 
+This report demonstrates the ability to discover anomalies among transaction to highlight activity that should be reviewed for suspicious transactoins.  
+
 ## Visual Analysis - Lineplot
 
 The use of lineplots and boxplots provide a visual representation of an anomaly. The anomalies are represented by sudden spikes or dips which are inconsistent with linear progression. The following two graphs demonstrate transactionaly anomalies. 
 
 ### Cardholder 2 Lineplot
 
-Cardholder 2 looks sporadic, but none of teh spikes are abnormally high compared to the other spikes.
+Cardholder 2 looks sporadic, but none of the spikes are abnormally high compared to the other spikes.
 
 ![Cardholder 2 Lineplot](Images/cardholder2_lineplot.png)
 
@@ -75,3 +77,10 @@ Next we can caclute a standard diviation then create a list of transaction that 
 ### Transactions outside the 25 and 75 quartiles
 
 Finally we can use the quartile functionality to find the transaciton in the bottom 25 percentile or the top 25 percentile. The outter bounds should be similiar to those 2 sigmas outside the standard diviation.
+
+## Databases utilized
+
+Transactional Database reference tables:
+
+![Transactionsdb](Images/QuickDBD-export(1).png)
+
