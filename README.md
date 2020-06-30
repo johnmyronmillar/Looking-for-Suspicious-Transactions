@@ -30,33 +30,9 @@ Using boxplots to visualize tranactional activity, suspicious transactions are i
 
 When we review cardholder 25's monthly transactions, there are one to three tranactions per month that are outside our box of normal tranactions. These are the transactions we'd want to review for suspicious activity.
 
-### Cardholder 25 January Boxplot
+### Cardholder 25 January-June 6 Month Boxplot
 
-![Cardholdeer 25 January Boxplot](Images/cardholder25_Jan.png)
-
-### Cardholder 25 Febuary Boxplot
-
-![Cardholdeer 25 Febuary Boxplot](Images/cardholder25_Feb.png)
-
-### Cardholder 25 March Boxplot
-
-![Cardholdeer 25 March Boxplot](Images/cardholder25_Mar.png)
-
-### Cardholder 25 April Boxplot
-
-![Cardholdeer 25 April Boxplot](Images/cardholder25_Apr.png)
-
-### Cardholder 25 May Boxplot
-
-![Cardholdeer 25 May Boxplot](Images/cardholder25_May.png)
-
-### Cardholder 25 June Boxplot
-
-![Cardholdeer 25 June Boxplot](Images/cardholder25_Jun.png)
-
-### Cardholder 25 July Boxplot
-
-![Cardholdeer 25 July Boxplot](Images/cardholder25_Jul.png)
+![Cardholdeer 25 January June Boxplot](Images/six_mo_boxplot.png)
 
 ## Systematic review
 
