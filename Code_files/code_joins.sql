@@ -10,7 +10,7 @@ WHERE cc.id_card_holder = 2 or cc.id_card_holder = 18;
 SELECT id, name, id_merchant_category FROM merchant
 WHERE id = 640; 
 
-SELECT t.id, t.date, t.amount, t.id_merchant, m.name FROM transaction as t 
+SELECT t.id, t.date, t.amount, t.id_merchant, m.name, FROM transaction as t 
 INNER JOIN merchant as m ON t.id_merchant = m.id 
 WHERE t.id = 640;
 
