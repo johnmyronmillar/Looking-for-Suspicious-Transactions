@@ -114,3 +114,8 @@ Transactional Database reference tables utilized to connect transaction to the c
 
 ![Transactionsdb](Images/QuickDBD-export.png)
 
+QuickBDB file:
+
+![Transactionsdb](Images/Transactionsdb.png)
+
+
